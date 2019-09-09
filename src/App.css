@@ -31,3 +31,90 @@
     transform: rotate(360deg);
   }
 }
+
+/* ////////////////////////////////// */
+
+
+
+
+.App-intro {
+  font-size: large;
+}
+
+.Game {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+    background-color: #5689db;
+    border: 1px solid #5689db;
+    border-radius: 3px;
+    display: inline-block;
+    color: #FFF;
+    font-size: 12pt;
+    padding: 7px 28px;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.5s;
+    max-width: 160px;
+    min-width: 160px;
+}
+
+button:hover {
+    background-color: lightblue;
+    font-size: 14pt;
+}
+
+.Board {
+  display: flex;
+}
+
+.Slat {
+
+}
+
+.Hole {
+  padding: 5px;
+  margin: 1px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+}
+
+.Hole div {
+  position: relative;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  top: -400px;
+  transition: transform 0.5s;
+}
+
+.Red {
+  background-color: red;
+  transform: translateY(400px);
+}
+
+.Yellow {
+  background-color:yellow;
+  transform: translateY(400px);
+}
+
+.winnerMessage {
+  margin: 20px;
+  font-size: 0pt;
+  font: 12pt;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.18, 0.99, 0.8, 1.17);
+}
+
+.appear {
+  opacity: 1;
+  font-size: 20pt;
+}
+
+
+
